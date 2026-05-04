@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KROMA — Estudio Creativo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="estilo-original.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <a href="#" class="navbar-marca">KROMA</a>
+      <ul class="navbar-menu">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#equipo">Equipo</a></li>
+        <li><a href="#contacto" class="btn-nav">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-contenido">
+        <span class="hero-etiqueta">Estudio creativo · Quito, Ecuador</span>
+        <h1 class="hero-titulo">Diseño que<br /><em>convierte.</em></h1>
+        <p class="hero-texto">
+          Construimos marcas visuales para negocios que quieren ser recordados.
+          Identidad, estrategia y comunicación.
+        </p>
+        <div class="hero-acciones">
+          <a href="#proyectos" class="btn-principal">Ver proyectos</a>
+          <a href="#servicios" class="btn-secundario">Nuestros servicios</a>
+        </div>
+      </div>
+      <div class="hero-decoracion">
+        <div class="circulo-grande"></div>
+        <div class="circulo-chico"></div>
+      </div>
+    </section>
+
+    <button
+      id="toggle"
+      style="
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        background-color: #d4500c;
+        border-radius: 5px;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+      "
+    >
+      Modo Oscuro
+    </button>
+    <script>
+      document.getElementById("toggle").addEventListener("click", function () {
+        document.body.classList.toggle("dark");
+        this.textContent = document.body.classList.contains("dark")
+          ? "Modo claro"
+          : "Modo oscuro";
+      });
+    </script>
+  </body>
+</html>
